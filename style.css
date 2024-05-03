@@ -1,0 +1,17 @@
+#aboutButton{
+    border: none;
+    color: rgb(255, 132, 0);
+    font-size: 40px;
+    font-family: "Luckiest-Guy"; 
+    box-shadow: none;
+    background: none;
+}
+
+.projectContainers{
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolioBody{
+    padding-left: 30%;
+}
