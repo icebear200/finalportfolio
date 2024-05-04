@@ -6,57 +6,88 @@
     <link rel="stylesheet" type="text/css" href="portfolio.css">
   </head>
 
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/bubble-letters');
+    @import url('https://fonts.cdnfonts.com/css/liquid');
+    @import url('https://fonts.cdnfonts.com/css/vanila');
+    @import url('https://fonts.cdnfonts.com/css/rangile');
+    </style>
+
+
+
  
-  <body id ="portfolioBody">
-    
-    <div id="logoBar">
-      <h1>PORTFOLIO</h1>
+  <body>
+  
+    <div class="pagePadding"> 
+     <div class="pageTitle">   <h1>PORTFOLIO</h1> </div>
+     <div class="navBar">
+      <div class="buttons">   
+      <button class="home" onClick="goToHome()"> HOME </button>
+      <button class="about" onClick="goToAbout()"> ABOUT </button>
+      <button class="contact" onClick="goToReachOut()"> CONTACT </button>
+    </div>
     </div>
 
-
-    <div class="projectContainers">   
-        
-        <div class="papayeContainer">  
-        <div class="papayeBackgroundInfo"> <p> Info ABOUT PROJECT </p>     </div>
-        <div class="papayeRedesign">  
-        <h3> Case Study 1: Restaurant Redesign</h3>
-        <img src="images/papayeHome.png" width="500px" height="300px">  
-        <a class="papayeOverlay" href="papayeProject.html"> View Project</a>
     </div>
-     
-    </div>
-
-        <div class="playlistRedesign"> 
-            <h3> Case Study 2: Playlist Organization Redesign</h3>
-            <div id="case2MainImage"> </div>
-         
-            <div class="purchaseRedesign"> 
-                <h3> Case Study 3: Purchase Flow Redesign </h3>
-                <img src="images/cur8.png" width="500px" height="300px"> 
-      </div>
-
-      </div>
-    </div>
-
-    <script>
-        var case2MainImageChange = document.getElementById("case2MainImage");
-        var case2MainImages = [ "url(images/ipad.png)" ,  "url(images/restaurantRedesignHome.png)" ]
-        var currImage = 0;
-    
-        function changeMainImage() {
-            case2MainImageChange.style.backgroundImage = case2MainImages[currImage];
-            currImage = (currImage + 1) % case2MainImages.length;
+    <script> 
+        function goToAbout(){
+         window.location.href = "about.html"
         }
-        setInterval(changeMainImage, 3000);
+        function goToHome(){
+         window.location.href = "index.html"
+        }
+        function goToReachOut(){
+         window.location.href = "reachout.html"
+        }
+     </script>
+
+
+    <div class="projectContainers" >   
+
+    <div class="papayeOuterContainer"> 
+        <div class=" papayeImageCard"> <img src="images/ipad.png"  width="450px";  height = "380px";  onClick="goToPapayeProject()"> </div>
+        <div class="papayeInfoCard"> 
+             <h3> Case Study 1: Restaurant Web Redesign </h3> 
+            <p> Resdesigned the homepage of my local Ghanian restaurant. Accessible on laptops, phones, and tablets. </p>   </div>
+  </div>
+      
+    <script>
+      function goToPapayeProject(){
+        window.location.href = "papayeProject.html"
+      }
     </script>
 
-      
+          <div class="cur8OuterContainer"> 
+        <div class=" cur8ImageCard"> <img src="images/cur8.png"  width="470px";  height = "380px"; onClick="goToCur8Project()"> </div>
+        <div class="cur8InfoCard"> 
+             <h3> Case Study 2: Purchase Flow Design</h3> 
+            <p> Resdesigned the homepage of my local Ghanian restaurant. Accessible on laptops, phones, and tablets. </p>   </div>
+        </div>
 
-  
- 
+        <script>
+            function goToCur8Project(){
+              window.location.href = "cur8Project.html"
+            }
+          </script>
+
+
+
+        <div class="playlistOuterContainer"> 
+            <div class=" playlistImageCard"> <img src="images/songs.png"  width="450px";  height = "380px"; onClick="goToPlaylistProject()"> </div>
+            <div class="playlistInfoCard"> 
+                 <h3> Case Study 3: Playlist Organizer App</h3> 
+                <p> Resdesigned the homepage of my local Ghanian restaurant. Accessible on laptops, phones, and tablets. </p>   </div>
+      </div>
+      <script>
+        function goToPlaylistProject(){
+          window.location.href = "playlistProject.html"
+        }
+      </script>
 
 
    
+    </div>
+    </div>
 
   </body>
 </html>

@@ -1,13 +1,83 @@
-#portfolioBody{
-    padding-left: 30%;
-}
 
-.projectContainers{
-    grid-template-columns: auto;
-}
-
-.papayeContainer{
+.pagePadding{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+    position: relative;
+    
 }
 
+.navBar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+}
+
+.home, .about, .contact{
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 102, 0);
+    font-family: "Liquid"; 
+    box-shadow: none;
+    background: none;
+    transition: transform 0.3s;
+}
+
+.pageTitle{
+    font-size: xx-large;
+    font-family: "Bubble Letters";
+    color:rgb(255, 102, 0);
+  
+
+}
+
+ .projectContainers {
+    display: grid;
+    grid-template-columns: repeat(3, .3fr);
+    grid-gap: 2em;
+    padding-left: 2%;
+    padding-right: 1%;
+  
+
+  }
+  
+  .projectContainers > div {
+    border: 1px solid #ccc; 
+
+    transition: transform 0.3s;
+    width: 450px;
+    height: 500px;
+    position: relative;
+
+  }
+
+  .projectContainers > div:hover{
+    transform: scale(1.1);
+
+  }
+
+  .papayeImageCard, .playlistImageCard, .cur8ImageCard, .overviewImageCard{
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    overflow: hidden;
+
+  }
+
+  .papayeOuterContainer, .playlistOuterContainer, .cur8OuterContainer, .overviewContainer{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2%;
+   
+  }
+
+  .papayeInfoCard, .playlistInfoCard, .cur8InfoCard, .overviewInfoCard{
+    padding-left: 5%
+  }
+
+  
+
+  
+ 

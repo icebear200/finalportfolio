@@ -16,20 +16,50 @@
   <body>
     <div class="aboutPage">
      
-      <div class="title"> <h1>ABOUT ANGIE</h1> </div>
-      <div class="intro"> 
+      
+      <div class="navBar">  
+        <div class="title"> <h1>ABOUT ANGIE</h1> </div>
+        <div class="pagesContainer"> 
+          <button class="navBarHome" onClick="goToHome()"> HOME </button>
+          <button class="navBarProjects" onClick="goToPortfolio()">  PROJECTS </button>
+         <button class="navBarContact" onClick="goToReachOut()"> CONTACT </button>
+        </div>
+    </div>
+
+    <script> 
+        function goToHome(){
+         window.location.href = "index.html"
+        }
+        function goToPortfolio(){
+         window.location.href = "portfolio.html"
+        }
+        function goToReachOut(){
+         window.location.href = "reachout.html"
+        }
+     </script>
+ 
+
+
+      <div class="introImageContainer"> 
+        <div id="angiePic"> <img src="images/aboutMePic.png" width="400px" height="500px"> </div> 
+        <div class="infoContainer"> 
+        <div class="intro"> 
       <h3> Hi! I'm Angie, a junior at Brown University studying Computer Science with a focus on Design. I love creating artful and intiutive 
         websites with good user flow and accessibility. I have front-end epxerience in HTML, CSS, and React, and Figma, as well as some backend experience in Java. I'm hoping to 
         pursure a career in fintech and am passionate about learning more about technologies that make finanical systems more efficient. This summer I will be 
         an analyst at an investment bank and am excited to work with the fintech team where I will learn more about the intersection of tech and finance. I am orginally from New York City and spent the first couple years of my 
         life growing up in Ghana where my family lives.  </h3> 
     </div>
-
-      <div id="angiePic"> <img src="images/aboutMePic.png" width="400px" height="500px"> </div> 
-
-      <div class="funInfo">  <h3> When I'm not designing sites, you can find me teaching math at the local high school, wandering around a museum, directing short movies,
+    <div class="funInfo">  <h3> When I'm not designing sites, you can find me teaching math at the local high school, wandering around a museum, directing short movies,
         and (attempting) to write stand up comedy. Hope you enjoy! </h3> </div>
-      </div>
+        <div class="resume"> <a href="https://docs.google.com/document/d/1P-uoKY41bAmY7g4rbnbfE1ImWh-oOAQPmA868gSlOVY/edit?usp=sharing"> <button class="res"> RESUME </button> </a></div>
+</div>
+
+
+    </div>
+    
+   
+     
 
      </div>
 

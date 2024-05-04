@@ -5,17 +5,52 @@
     align-items: center;
 }
 
+.introImageContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+}
+
 .aboutPage{
     padding-left: 10%;
     padding-right: 10%
 }
 
-.angiePic{
-    align-items: center;
-}
 
-.intro, .funInfo{
+
+.intro{
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
+    padding-left: 10%;
+    padding-top: 5%;
 }
+
+.funInfo{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10%;
+}
+
+.resume{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10%;
+
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pagesContainer{
+    padding-top: 10%;
+}
+
+
 

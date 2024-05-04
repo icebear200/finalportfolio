@@ -13,30 +13,36 @@
         @import url('https://fonts.cdnfonts.com/css/liquid');
         @import url('https://fonts.cdnfonts.com/css/vanila');
         @import url('https://fonts.cdnfonts.com/css/rangile');
+        body {
+          background-color: rgb(248, 226, 81);
+        }
 
         </style>
         
   </head>
 
  
-  <body>
-    <div id="homePage"> 
-
+ 
+    <div class="homePage"> 
+      <body>
       <div class="navBar"> 
-        <h3> ANGIE OSEI</h3>
+        <button class="angieOsei"> ANGIE OSEI</button>
+        <div class="pagesContainer"> 
+          <button class="navBarAbout" onClick="goToAbout()"> ABOUT ME</button>
+          <button class="navBarProjects" onClick="goToPortfolio()">  PROJECTS </button>
+         <button class="navBarContact" onClick="goToReachOut()"> CONTACT </button>
+        </div>
       </div>
     <div id="intro">
-
-
-
      <div id="homepageTitle"> <h1>HI! I'M ANGIE</h1> </div> 
 
-      <h3>I'M A JUNIOR AT BROWN UNIVERSITY AND A CREATIVE FRONT-END ENGINEER WHO IS PASSIONATE ABOUT USING DESIGN TO CONNECT. 
-     LEARN MORE <button id="aboutButton" onClick="goToABout()"> ABOUT ME </button> CHECK OUT 
-         <button id="portfolioButton" onClick="goToPortfolio()"> PORTFOLIO,</button> AND  <button id="reachOutButton" onClick="goToReachOut()"> REACH OUT  </button> </h3>
+      <h3>I'M A JUNIOR AT BROWN UNIVERSITY AND A CREATIVE FRONT-END ENGINEER WHO IS PASSIONATE ABOUT USING DESIGN TO CONNECT! 
+     LEARN MORE <button id="aboutButton" onClick="goToAbout()"> ABOUT ME, </button> CHECK OUT MY
+         <button id="portfolioButton" onClick="goToPortfolio()"> PORTFOLIO,</button> AND  <button id="reachOutButton" onClick="goToReachOut()"> REACH OUT.  </button>  LOOKING FORWARD
+        TO CREATING WITH YOU! </h3>
     </div>
     <script> 
-       function goToABout(){
+       function goToAbout(){
         window.location.href = "about.html"
        }
        function goToPortfolio(){
@@ -62,7 +68,7 @@
       </div>
 
    
-    </div>
-</div>
+ 
   </body>
+</div>
 </html>
