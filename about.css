@@ -1,0 +1,21 @@
+.title{
+    font-size: 50px;
+    color: rgb(255, 132, 0);
+    font-family: "Bubble Letters";
+    align-items: center;
+}
+
+.aboutPage{
+    padding-left: 10%;
+    padding-right: 10%
+}
+
+.angiePic{
+    align-items: center;
+}
+
+.intro, .funInfo{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+

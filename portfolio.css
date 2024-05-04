@@ -1,0 +1,13 @@
+#portfolioBody{
+    padding-left: 30%;
+}
+
+.projectContainers{
+    grid-template-columns: auto;
+}
+
+.papayeContainer{
+    display: flex;
+    flex-direction: row;
+}
+

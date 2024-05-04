@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS Studio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
   </head>
 
  
@@ -15,24 +15,40 @@
 
 
     <div class="projectContainers">   
-      <div class="papayeRedesign"> 
-        <h3> Project 1: Restaurant Redesign</h3>
-        <img src="images/papayeHome.png" width="500px" height="300px">  </div>
+        
+        <div class="papayeContainer">  
+        <div class="papayeBackgroundInfo"> <p> Info ABOUT PROJECT </p>     </div>
+        <div class="papayeRedesign">  
+        <h3> Case Study 1: Restaurant Redesign</h3>
+        <img src="images/papayeHome.png" width="500px" height="300px">  
+        <a class="papayeOverlay" href="papayeProject.html"> View Project</a>
+    </div>
+     
+    </div>
 
         <div class="playlistRedesign"> 
-            <h3> Project 2: Playlist Organization Redesign</h3>
-            <img src="images/playlist.png" width="500px" height="300px"> </div>
-
+            <h3> Case Study 2: Playlist Organization Redesign</h3>
+            <div id="case2MainImage"> </div>
+         
             <div class="purchaseRedesign"> 
-                <h3> Project 3: Purchase Flow Redesign </h3>
+                <h3> Case Study 3: Purchase Flow Redesign </h3>
                 <img src="images/cur8.png" width="500px" height="300px"> 
       </div>
 
       </div>
-
-
-    
     </div>
+
+    <script>
+        var case2MainImageChange = document.getElementById("case2MainImage");
+        var case2MainImages = [ "url(images/ipad.png)" ,  "url(images/restaurantRedesignHome.png)" ]
+        var currImage = 0;
+    
+        function changeMainImage() {
+            case2MainImageChange.style.backgroundImage = case2MainImages[currImage];
+            currImage = (currImage + 1) % case2MainImages.length;
+        }
+        setInterval(changeMainImage, 3000);
+    </script>
 
       
 
