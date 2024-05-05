@@ -1,0 +1,98 @@
+.papayePagePadding{
+    padding: 5%;
+}
+
+.pageTitle{
+    font-size: xx-large;
+    font-family: "Bubble Letters";
+    color:rgb(255, 102, 0);
+
+}
+
+.background{
+    font-size: 26px;
+    color: black;
+    padding-left: 7%;
+    padding-right: 10%;
+}
+
+
+
+.problemTitle, .researchTitle{
+    font-size: large;
+    font-family: "Liquid";
+    color: black
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ .goToRole, .goToResearch, .goToSolution, .goToProcess, .goToTakeaways, .goToProblem{
+    color: black;
+    font-family: Ringle;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: none;
+    background: none;
+ }
+
+ .sitesContainer{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 500px;
+    padding-top: 10px;
+    background-color: rgb(235, 234, 234);
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 7%;
+    margin-right: 7%;
+ }
+
+
+
+
+ .originalSite:hover, .myRedesign:hover{
+    transform: scale(1.1);
+    border: 1px solid rgb(255, 98, 0);
+ }
+
+
+ .problemSectionInfo, .researchSectionInfo{
+    padding-left: 7%;
+    padding-right: 10%;
+ }
+
+ .problemDescription{
+    font-size: 22px;
+    color: rgb(28, 28, 28);
+    font-family: "Ringle";
+    line-height: 28px;
+ }
+
+ #papayeProblemImages{
+    width: auto;
+    height: 1200px;
+    padding-top: 10px;
+    background-color: rgb(235, 234, 234);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.problemImage1, .problemImage2{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    
+}
+
+.problemImage2Info, .problemImage1Info{
+    width: 450px;
+    text-align: center;
+}
+

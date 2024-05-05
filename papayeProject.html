@@ -3,26 +3,46 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Papaye Restaurant Redesign</title>
-    <link rel="stylesheet" type="text/css" href="papyeProject.css">
+    <link rel="stylesheet" type="text/css" href="papayeProject.css">
   </head>
+
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/bubble-letters');
+    @import url('https://fonts.cdnfonts.com/css/liquid');
+    @import url('https://fonts.cdnfonts.com/css/vanila');
+    @import url('https://fonts.cdnfonts.com/css/rangile');
+    body {
+      background-color: rgb(251, 251, 251);
+    }
+    </style>
+
 
  
   <body>
     <div class="papayePagePadding"> 
     
-    <div id="">
-      <h1> Papaye Restaurant Redesign</h1>
-      <h3> Redesigned and created a modern website for a family-run Restaurant in NYC </h3>
-    </div>
+    <div class="pageTitle"> <h1> Papaye Restaurant Redesign</h1>    </div>
+   
+    <h3> Redesigned and created a modern website for a family-run Restaurant in NYC </h3>
 
-    <div id="navBar"> 
-        <button id="goToproblem" onClick="goToProblem()"> The Problem</button>
-        <button id="goTobrainstormingSketches" onClick="goToBrainStorm()"> Brainstorming and Sketches</button>
-        <button id="goTodesignChoices"> Design Choices</button>
-        <button id="goTofinal Flow"> Final Design</button>
-        <button id="goToPrototype"> Prototype </button>
-        <button id="goToTakeaways"> </button>
+    <div class="navBar">
+        <div class="buttons">   
+        <button class="home" onClick="goToHome()"> HOME </button>
+        <button class="about" onClick="goToAbout()"> ABOUT </button>
+        <button class="contact" onClick="goToReachOut()"> CONTACT </button>
+      </div>
+      </div>
+
+
+    <div id=""> 
+        <button class="goToProblem" onClick="goToProblem()"> The Problem</button>
+        <button class="goToResearch"> Research</button>
+        <button class="goToProcess"> Process</button>
+        <button class="goToSolution"> Solution </button>
+        <button class="goToTakeaways"> Takeaways</button>
+        <button class="goToRole"> My Role</button>
     </div> 
+
 
     <script> 
        function goToBrainStorm(){
@@ -34,36 +54,62 @@
       
     </script>
 
-    <div id="background">
-        <p> I chose to redesign the homepage for my favorite Ghanian restaurant's website in New York City growing up. The restaurant is a 
-            small family-run business.
+    <div class="background">
+        <h3> A Hidden Gem: Papaye Restaurant in New York City</h3>
+        <p> 
+          Growing up in New York City, I've been lucky enough to experience the cultures and cuisines that define this culinary hub. 
+          One of my treasured spots is Papaye Restaurant, a local family-run gem in the Bronx serving up delicious Ghanaian 
+          and African dishes that resonate with my upbringing in Ghana. For this project, I took on the task of 
+          revamping Papaye's outdated site and ensuring a smoother user experience while staying true to the authentic flavors that Papaye embodies.
         </p>
-        
     </div>
+    <div class="sitesBackground"> 
+    <div class="sitesContainer">     
+    <div class="originalSite"> <a href="https://www.papayenyc.com/">   <img src="images/oghomepage.png" width="400px" height="250px"> </a>    </div>
+    <div class="myRedesign">  <a href="https://icebear200.github.io/responsive-redseign/">  <img src="images/restaurantRedesignHome.png" width="400px" height="250px"> </a>    </div>
+  </div>
+</div>
 
-    <div id="problem"> 
-        <h2> Problem </h2>
-        <p> The original Papaye site was created in 2006 and doesn't seem to have had many updates made sinde. 
-            The images on the site do not properly load so there is a lot of blank space with corrupt image files which is 
-            unfortunate since the images are suppose to show the diverse flavors and dishes the restaurant offers.
-            The color palette is very dark and does not provide good contrast. 
+
+
+
+    <div  class="problemSectionInfo">   
+       <div class="problemTitle">    <h2> THE PROBLEM</h2>  </div>
+       <div class="problemDescription">   
+       <p> 
+        The original Papaye site, created in 2006, has seen little updating since then. The homepage, dark and 
+        outdated, suffers from corrupted image files that fail to load, leaving it mostly empty with just a black
+         background. Despite having a food gallery with updating images of the dishes the restaurant offers, the images don't load, 
+        creating a lack of visual appeal that fails to showcase Papaye's delicious offerings. Because of this, the site lacks a clear 
+        color theme and brand identity. This low contrast and lack of imagery might lead users to believe the site is out-of-date and 
+        exit the site prematurely before viewing information about the restaurant's food offerings and locations. 
         </p>
+        <p>  To address these issues, I designed a one-page website that contains
+          all the information on the site. At the top of the redesigned site, I included a navigation bar with buttons that allows users to scroll to 
+          the "About" and "Hours and Location" sections, along with buttons that link directly to the restaurant's menu with updated prices and 
+          updated the "Order Online" button to link directly to the restaurant's Doordash ordering page. </p>
+        </div>
+      </div>
 
+      <div class="researchSectionInfo"> 
+        <div class="researchTitle">  <h2> RESEARCH </h2></div>
+      <div class="problemSectionPhotos">   
         <div id="papayeProblemImages">  
-        <img src="images/oghomepage.png" width="500px" height="300px"> 
-        <img src="images/missingPhotos.png" width="500px" height="300px"> 
+          <div class="problemImage1">    
+          <img src="images/ogHome.png" width="450px" height="250px">
+          <div class="problemImage1Info">    <p> Original homepage is largely empty and has a black background in the absence of images that properly load for the food gallery</p>  </div> </div>
+       <div class="problemImage2">    <img src="images/foodGallery.png" width ="450px" height="250px"> 
+         <div class="problemImage2Info"> <p> Images in the food gallery do not load.</p> </div>  </div>
+
+         <div class="problemImage3">    <img src="images/noColor.png" width ="450px" height="250px"> 
+          <div class="problemImage3Info"> <p> Low color contrast and lack of clear color theme and brand identity.</p> </div>  </div>
     </div>
+  </div>
+
+</div>
+   
 
 
-
-
-        
-        <h3> </h3>
-    </div>
-
-    <div id="brainStormingSketches"> 
-
-    </div>
  
 
 

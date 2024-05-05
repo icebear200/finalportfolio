@@ -46,16 +46,17 @@
   
   .projectContainers > div {
     border: 1px solid #ccc; 
-
     transition: transform 0.3s;
     width: 450px;
     height: 500px;
     position: relative;
+    background-color: rgb(249, 248, 248);
 
   }
 
   .projectContainers > div:hover{
     transform: scale(1.1);
+    border: 1px solid rgb(255, 98, 0);
 
   }
 
@@ -63,6 +64,7 @@
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
     overflow: hidden;
+   
 
   }
 
@@ -74,7 +76,8 @@
   }
 
   .papayeInfoCard, .playlistInfoCard, .cur8InfoCard, .overviewInfoCard{
-    padding-left: 5%
+    padding-left: 5%;
+    padding-right: 2%
   }
 
   
