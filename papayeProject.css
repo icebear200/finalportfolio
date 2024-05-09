@@ -18,7 +18,7 @@
 
 
 
-.problemTitle, .researchTitle{
+.problemTitle, .researchTitle, .processTitle, .solutionTitle{
     font-size: large;
     font-family: "Liquid";
     color: black
@@ -43,9 +43,7 @@
     display: flex;
     flex-direction: row;
     width: auto;
-    height: 500px;
-    padding-top: 10px;
-    background-color: rgb(235, 234, 234);
+    height: auto;
     align-items: center;
     justify-content: space-around;
     margin-left: 7%;
@@ -61,42 +59,47 @@
  }
 
 
- .problemSectionInfo, .researchSectionInfo, .processSectionInfo{
-    padding-left: 7%;
-    padding-right: 10%;
+ .problemSectionInfo, .researchSectionInfo, .processSectionInfo, .solutionSectionInfo{
+    padding-left: 4%;
+    padding-right: 4%;
  }
 
- .problemDescription{
+ .problemDescription, .researchDescription, .processDescription, .solutionDescription{
     font-size: 22px;
     color: rgb(28, 28, 28);
     font-family: "Ringle";
     line-height: 28px;
  }
 
- #papayeProblemImages{
+ .problemSectionPhotos{
     width: auto;
-    height: auto;
-    padding-top: 10px;
+    height: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: rgb(246, 178, 59);
-    border-radius: 1.5%;
+    border-radius: 1.75%;
     align-items: center;
     display: flex;
-    flex-direction: column;
-    /* justify-content: space-evenly; */
-}
+    flex-direction: row;
+    justify-content: space-between;
+ }
 
 
-.problemImage1, .problemImage2{
+ .problemImage1, .problemImage2, .problemImage3{
+    padding-right: 5%;
+    width: 300px;
+    height: 250px;
+
+ }
+
+
+ .solutionImage2{
     display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    
-}
+    flex-direction: row;
+ }
 
-.problemImage2Info, .problemImage1Info{
-    width: 450px;
-    text-align: center;
-}
+
+
 
 
 
@@ -114,6 +117,35 @@
     justify-content: space-evenly;
 }
 
+.solutionPhotos1{
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 7%;
+    background-color: rgb(246, 178, 59);
+    border-radius: 1.75%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+.solutionImage1{
+    display: flex;
+    flex-direction: column;
+}
+
+.solutionImage1Info{
+    width: 400px;
+    margin-bottom: 10%;
+}
+
+
 .papayeWebsite{
     display: flex;
     flex-direction: column;
@@ -122,4 +154,40 @@
 .spaceArrow{
     width: 50px;
 }
+
+.solution2OuterContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+}
+
+.solution2ImageCard{
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    overflow: hidden;
+}
+
+.solutionImage2InfoCard{
+    width: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+
+}
+
+.navBarSolutionInfo, .sitesCardInfo{
+    width: 900px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+
+}
+
+.userFlow{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 
