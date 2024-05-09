@@ -61,7 +61,7 @@
  }
 
 
- .problemSectionInfo, .researchSectionInfo{
+ .problemSectionInfo, .researchSectionInfo, .processSectionInfo{
     padding-left: 7%;
     padding-right: 10%;
  }
@@ -75,14 +75,16 @@
 
  #papayeProblemImages{
     width: auto;
-    height: 1200px;
+    height: auto;
     padding-top: 10px;
-    background-color: rgb(235, 234, 234);
+    background-color: rgb(246, 178, 59);
+    border-radius: 1.5%;
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
+
 
 .problemImage1, .problemImage2{
     display: flex;
@@ -94,5 +96,30 @@
 .problemImage2Info, .problemImage1Info{
     width: 450px;
     text-align: center;
+}
+
+
+
+#processPhotos{
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(246, 178, 59);
+    border-radius: 1.75%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.papayeWebsite{
+    display: flex;
+    flex-direction: column;
+}
+
+.spaceArrow{
+    width: 50px;
 }
 
