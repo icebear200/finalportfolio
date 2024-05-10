@@ -152,6 +152,7 @@ border: none;
  .favoriteAndFilterVid,  .filterAndSortVid, .layoutVid{
     display: flex;
     flex-direction: column;
+    height: auto;
  }
 
  .layoutVidExplanation, .filterVidExplanation, .favoriteVidExplanation{
@@ -194,6 +195,7 @@ border: none;
  .solutionImage2{
     display: flex;
     flex-direction: row;
+    text-align: center;
  }
 
  .solutionImagesContainer{
@@ -357,7 +359,7 @@ border: none;
 .line{
     border-bottom: 1px solid black;
     width: 98%;
-    margin-bottom: ;
+    margin-bottom: 5%;
     
 }
 
@@ -367,6 +369,7 @@ border: none;
 
 .solutionPhotos2{
     padding-top: 2%;
+
 }
 
 .userFlow{

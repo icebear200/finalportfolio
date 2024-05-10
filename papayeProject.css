@@ -25,8 +25,8 @@ border: none;
     font-size: xx-large;
     font-family: "Bubble Letters";
     color:rgb(255, 102, 0);
-    text-align: center;
     padding-top: 2%;
+    padding-left: 13%;
 
 }
 
@@ -40,9 +40,10 @@ border: none;
 
 
 .problemTitle, .researchTitle, .processTitle, .solutionTitle, .takeawaysTitle, .roleTitle{
-    font-size: large;
+    font-size: 25px;
     font-family: "Liquid";
-    color: black
+    color: black;
+    text-align: center;
 }
 
 .navBar{
@@ -119,11 +120,19 @@ border: none;
 
  }
 
+ .problemImage1Info, .problemImage2Info,.problemImage3Info{
+    text-align: center;
+ }
+
 
  .solutionImage2{
     display: flex;
     flex-direction: row;
+    padding-left: 18%;
+    margin-bottom: 6%;
  }
+
+
 
 
 #processPhotos{
@@ -132,12 +141,12 @@ border: none;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgb(246, 178, 59);
     border-radius: 1.75%;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    background-color: #b9f7f8;
 }
 
 .solutionPhotos1{
@@ -146,7 +155,7 @@ border: none;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #FFBC3B;;
+    /* background-color: ; */
     border-radius: 1.75%;
     align-items: center;
     display: flex;
@@ -214,11 +223,22 @@ border: none;
     padding-bottom: 2%;
 }
 
-.userFlow{
+.userFlow {
     display: flex;
     flex-direction: row;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 5%; 
+    padding-bottom: 1%;
+    padding-left: 9%;
+}
+
+.orderOnlineButton{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+    padding-bottom: 1%;
+    padding-left: 16%;
 }
 
 .responsive{
@@ -247,13 +267,24 @@ border: none;
     padding-top: 4%;
 }
 
-.solutionPhotos2{
+.solutionImage2{
+    display: flex;
+    flex-direction: column;
     padding-top: 2%;
 }
 
-.userFlow{
-    padding-bottom: 1%;
-}
+
+.arrow{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-top: 20px solid black; 
+    align-content: center;
+    margin-left: 40%;
+
+ }
+
 
 .goToFigma{
     display: flex;
@@ -287,4 +318,8 @@ border: none;
 .goToFigma > a:hover img {
     transform: scale(1.1);
     border: 3px solid#fe900b;
+}
+
+.solution2InfoCard{
+    font-size: 19px;
 }
