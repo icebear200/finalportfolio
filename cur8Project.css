@@ -40,7 +40,7 @@ border: none;
 
 
 .problemTitle, .researchTitle, .processTitle, .solutionTitle, .takeawaysTitle, .roleTitle{
-    font-size: large;
+    font-size: x-large;
     font-family: "Liquid";
     color: black
 }
@@ -76,7 +76,40 @@ border: none;
     padding-top: 4%;
  }
 
+ .arrow{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-top: 20px solid black; 
+ }
 
+ .midFid, .midFid2, .hiFid, .sketch, .solutionFlow{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 4%;;
+    align-items: center;
+    padding-left: 8%;
+ }
+
+ .midFid2StakeFlow{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 4%;;
+    align-items: center;
+    padding-right: 5%;
+ }
+ 
+ .firstIntInfo, .secondItInfo, .thirdIntInfo{
+    width: 900px;
+    font-size: 20px;
+ }
+
+.solutionStakeholder{
+    padding-bottom: 5%;
+}
 
 
 
@@ -86,12 +119,13 @@ border: none;
  }
 
 
- .problemSectionInfo, .researchSectionInfo, .processSectionInfo, .solutionSectionInfo, .roleSection, .takeawaysSection{
+ .problemSectionInfo, .researchSectionInfo,  .solutionSectionInfo, .roleSection, .takeawaysSection, .finalSolutionInfo{
     padding-left: 7%;
     padding-right: 10%;
  }
 
- .problemDescription, .mattersDescription, .researchDescription, .processDescription, .solutionDescription, .takeawayDescription, .roleDescription{
+ .problemDescription, .mattersDescription, .researchDescription, .processDescription, .solutionDescription, .takeawayDescription, .roleDescription
+ , .finalSolutionInfo{
     font-size: 22px;
     color: rgb(28, 28, 28);
     font-family: "Ringle";
@@ -136,9 +170,11 @@ border: none;
     border-radius: 1.75%;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    padding-bottom: 5%;
 }
+
 
 .solutionPhotos1{
     width: auto;

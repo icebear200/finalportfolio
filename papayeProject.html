@@ -21,38 +21,29 @@
   <body>
     <div class="papayePagePadding"> 
     
-    <div class="pageTitle"> <h1> Papaye Restaurant Redesign</h1>    </div>
-   
-    <h3> Redesigned and created a modern website for a family-run Restaurant in NYC </h3>
-
     <div class="navBar">
         <div class="buttons">   
         <button class="home" onClick="goToHome()"> HOME </button>
         <button class="about" onClick="goToAbout()"> ABOUT </button>
-        <button class="contact" onClick="goToReachOut()"> CONTACT </button>
+        <button class="portfolio" onClick="goToPortfolio()"> PORTFOLIO </button>
       </div>
       </div>
+      <script> 
+        function goToAbout(){
+         window.location.href = "about.html"
+        }
+        function goToHome(){
+         window.location.href = "index.html"
+        }
+        function goToPortfolio(){
+         window.location.href = "portfolio.html"
+        }
+     </script>
+
+<div class="pageTitle"> <h1> Papaye Restaurant Redesign</h1>    </div>
 
 
-    <div id=""> 
-        <button class="goToProblem" onClick="goToProblem()"> The Problem</button>
-        <button class="goToResearch"> Research</button>
-        <button class="goToProcess"> Process</button>
-        <button class="goToSolution"> Solution </button>
-        <button class="goToTakeaways"> Takeaways</button>
-        <button class="goToRole"> My Role</button>
-    </div> 
 
-
-    <script> 
-       function goToBrainStorm(){
-        document.getElementById('brainStormingSketches').scrollIntoView();
-       }
-       function goToProblem(){
-        document.getElementById('problem').scrollIntoView();
-       }
-      
-    </script>
 
     <div class="background">
         <h3> A Hidden Gem: Papaye Restaurant in New York City</h3>
@@ -79,17 +70,10 @@
         color theme and brand identity. This low contrast and lack of imagery might lead users to believe the site is out-of-date and 
         exit the site prematurely before viewing information about the restaurant's food offerings and locations. These are the issues my redesign addresses.
         </p>
-
-          <h4> Why it Matters:</h4>  <p> Choosing to address and update the issues on Papye's website was important becasue it provided a free design solution 
-            to a small business run by local African immigrants for whom this restaurant is the achievement of their American dream. Further, the improvements I made to the site
-          will help attract and retain customers, improve accessibility through the use of stronger contrast and accessibility tags like alt and aria labels, and will help Papaye create a stronger
-        and more recognizable brand sense. </p>
         </div>
       </div>
 
       <div class="researchSectionInfo"> 
-       
-
       <div class="problemSectionPhotos">   
        
           <div class="problemImage1">    
@@ -104,8 +88,13 @@
           <div class="problemImage3Info"> <p> Low color contrast and lack of clear color theme and brand identity.</p> </div>  </div>
   </div>
 
+
+  <div class="mattersDescription"> <h4> Why it Matters:</h4>  <p> Choosing to address and update the issues on Papye's website was important becasue it provided a free design solution 
+    to a small business run by local African immigrants for whom this restaurant is the achievement of their American dream. Further, the improvements I made to the site
+  will help attract and retain customers, improve accessibility through the use of stronger contrast and accessibility tags like alt and aria labels, and will help Papaye create a stronger
+and more recognizable brand sense. </p> </div>
+
   <div class="researchTitle">  <h2> RESEARCH </h2></div>
-  <div class="researchSectionInfo"> 
     <div class="researchDescription">  
     <h2> Research that Influenced my Work:</h2> 
     <p> In working on the redesign I explored the web design of restaurants whose sites have stuck in my mind and went back to understand
@@ -122,16 +111,16 @@
       communicate the restaurant's offerings in a universal way--- through images of the beautiful food. The food gallery with updating images would be the centerpiece of the site.
     </p>
   </div>
-  </div>
+
 </div>
    
 <div class="Process"> 
-  <div class="processTitle"> <h2>PROCESS </h2>  </div>
     <div class="processSectionInfo">   
+      <div class="processTitle"> <h2>PROCESS </h2>  </div>
       <div id="processPhotos">  
         
         <div class="wireframe">    
-        <img src="images/papayeWireframe.png" width="360px" height="500px">
+        <img src="images/papayeWireframe.png" width="320px" height="450px">
         <div class="papayeWireframeInfo">    <p> I created a wireframe sketch of the redesign including all the important buttons, links,
           and images I wanted to include.</p> 
          </div> </div>
@@ -139,29 +128,29 @@
          <div class="spaceArrow"> </div>
 
          <div class="figma">  
-           <img src="images/iPadFigma.png" width ="360px" height="500px"> 
+           <img src="images/iPadFigma.png" width ="320px" height="450px"> 
        <div class="papayeFigmaInfo"> 
-        <p> After wireframing, I created a high-fidelity Figma prototype that reflected the color palette I wanted to use and showcased the functionality of
+        <p> Hi-fidelity Figma prototype that reflects color palette and functionality of
           all the buttons and links I wanted to include in my redesign </p> 
       </div> 
      </div>
      <img src="images/rightArrow.png" width="50px" height="50px"> 
     
      
-       <div class="papayeWebsite">    <img src="images/redesignHome.png" width ="360px" height="220px"> 
-        <img src="images/papayeAbout.png" width="360px" height="120px">  <img src="images/papayeContact.png" width="360px" height="150px">
+       <div class="papayeWebsite">    <img src="images/redesignHome.png" width ="320px" height="180px"> 
+        <img src="images/papayeAbout.png" width="320px" height="90px">  <img src="images/papayeContact.png" width="320px" height="160px">
         <div class="websiteInfo"> <p> My final website design is above. I ended up changing the color palette I initially chose to create greater contrast because my
           colors in my Figma did not pass accessibility scans well. </p>
     
     </div>  </div>
   </div>
 
-  <div class="processSectionInfo"> 
+  
     <div class="processDescription">   <p> All in all, my final design didn't change too much from my sketches and hi-fidelity prototype because I knew I wanted to create a relatively simple
     layout. In the end, I ended up adjusting the color palette because the red and white colors I intially chose did not pass accessibility scanners well.
     Aditionally, I ended up utilizing more artful and playful fonts than the Figma to give the site more personality. I also ended up including more functionality in the final version
     with the addition of the "View on Map" buttons at the bottom of the pag
-  </p> </div>
+  </p> 
 </div>
 </div>
 
@@ -178,15 +167,6 @@ of the restaurant's different offerings. </p>
   </div>
   <div class="solutionPhotos1">  
 
-
-  <!-- <div class="solutionImage1">    
-   <div class="foodGallery">   
-    <video width="600px" height="400px" controls>
-      <source src="images/video.mp4" type="video/mp4"> </div> 
-    <div class="solutionImage1Info">    <p> To stay true to the original design's vision of displaying images of the foods it they serve, the homepage features
-      an updating food gallery.</p> 
-     </div> </div> -->
-
      <h3> Addressing Lack of Photos, Contrast, and Brand Identity: Redesigned Food Gallery </h3> 
      <p> To stay true to the original design's vision of displaying images of the foods it they serve, the homepage features an updating food gallery </p>
       <div class="solution2OuterContainer"> 
@@ -196,60 +176,78 @@ of the restaurant's different offerings. </p>
             <div class="solution2InfoCard">  </div>
   </div>
 
+  <div class="line">  </div> 
+
   
   <div class="navBarSolutionInfo"> <h3> Using the Navigation Bar to Improve User Flow </h3> <p> Included a navigator bar with buttons that scroll to different sections on the page. Ex: When users clik "Hours and Locations" button, 
     the page scrolls to the bottom where the info is availble. When users click "View on Map", they can get directions from their location to each restaurant location.</p>
   </div>
 <div class="solutionPhotos2">   
   <div class="solutionImage2">    
-   <img src="images/navBar.png" width="500px" height="100px"> 
+   <img src="images/navBar.png" width="600px" height="200px"> 
    <div class="buttonArrow">  <img src="images/rightArrow.png" width="50px" height="50px"> </div>
-   <img src="images/hoursLoc.png" width="300px" height="150px">
+   <img src="images/hoursLoc.png" width="400px" height="250px">
  </div>
    </div>
 
    <div class="userFlow"> 
-    <img src="images/hoursLoc.png" width="350px" height="200px">
+    <img src="images/hoursLoc.png" width="400px" height="250px">
     <div class="buttonArrow">  <img src="images/rightArrow.png" width="50px" height="50px"> </div>
-   <img src="images/map.png" width="350px" height="200px"> 
+   <img src="images/map.png" width="400px" height="250px"> 
    </div>
    <div class="solutionImage2InfoCard">  
   </div>
 
+  <div class="line"> </div> 
+
+  <div class="responsive"> <h3> Responsive Design </h3> <p>  Created web, mobile and tablet compatible versions of site to make it accessible to users with different devices.</p> </div>
+  <div class="redesignContainer" >   
+
+    <div class="websiteOuterContainer"> 
+      <div class=" websiteImageCard"> <img src="images/laptop.png"  width="400px";  height = "350px";  > </div>
+</div>
+
+    <div class="iPadOuterContainer"> 
+      <div class=" iPadImageCard"> <img src="images/ipad.png"  width="350px";  height = "350px";> </div>
+      </div>
+    
+  
 
 
+        <div class="phoneOuterContainer"> 
+            <div class=" phoneImageCard"> <img src="images/phone.png"  width="200px";  height = "350px";> </div>
+      </div>
+   
+    </div>
+
+   <div class="line"> </div> 
 
 
    <div class="sitesBackground"> 
-    <div class="sitesCardInfo"> <h3> Before and After </h3>  <p> Click on the sites to see Papaye's originial site (left) and my redesign (right)</p></div>
+    <div class="sitesCardInfo"> <h3> View Redesigned Website </h3> </div>
     <div class="sitesContainer">     
-    <div class="originalSite"> <a href="https://www.papayenyc.com/">   <img src="images/oghomepage.png" width="500px" height="300px"> </a>    </div>
-    <img src="images/rightArrow.png" width="50px" height="50px"> 
-    <div class="myRedesign">  <a href="https://icebear200.github.io/responsive-redseign/">  <img src="images/restaurantRedesignHome.png" width="500px" height="300px"> </a>    </div>
+    <div class="myRedesign">  <a href="https://icebear200.github.io/responsive-redseign/">  <img src="images/restaurantRedesignHome.png" width="600px" height="350px"> </a>    </div>
   </div>
 </div>
-      
-     
-
+</div>
 </div>
 
-  
- 
+<div class="takeawaysSection"> 
+  <div class="takeawaysTitle"> <h3> TAKEAWAYS</h3></div>
+ <div class="takeawayDescription"> <p> This redesign taught me to be adapatable. Though my final design didn't stray too far from my original designs, I had to make some sacrifices to my
+    original design to prioritize accessibility. I changed my color palette, font style, and some images I was originally planning 
+    on using to prioritize contrast and readabiltiy for uers. This process also taught me about 
+    the importance of branding. I had to balance creating a more modern website with staying true to the authenticity of the restaurant's offerings and story.
+  </p> </div>
+</div>
+
+<div class="roleSection"> 
+  <div class="roleTitle"> <h3> MY ROLE</h3></div>
+ <div class="roleDescription">    <p> I was the designer and coder for this project. I worked alone. </p> </div>
 </div>
 
 
  
-
-
- 
-    <div id="introPage">
-
-
-
-    
-
-   
-      </div>
 
    
      </div>
