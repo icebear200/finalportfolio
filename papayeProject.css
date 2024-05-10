@@ -21,6 +21,13 @@ border: none;
     transition: transform 0.3s;
 }
 
+.papayeWireframeInfo, .websiteInfo, .papayeFigmaInfo{
+    font-size: 18px;
+    text-align: center;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
+    font-weight: bold;
+}
+
 .pageTitle{
     font-size: xx-large;
     font-family: "Bubble Letters";
@@ -35,6 +42,7 @@ border: none;
     color: black;
     padding-left: 7%;
     padding-right: 10%;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 
@@ -43,7 +51,7 @@ border: none;
     font-size: 25px;
     font-family: "Liquid";
     color: black;
-    text-align: center;
+ 
 }
 
 .navBar{
@@ -95,7 +103,7 @@ border: none;
  .problemDescription, .mattersDescription, .researchDescription, .processDescription, .solutionDescription, .takeawayDescription, .roleDescription{
     font-size: 22px;
     color: rgb(28, 28, 28);
-    font-family: "Ringle";
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     line-height: 28px;
  }
 
@@ -133,6 +141,36 @@ border: none;
  }
 
 
+.processArrow{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-top: 20px solid black; 
+    align-content: center;
+    margin-left: 0%;
+    margin-bottom: 3%;
+    
+
+}
+
+.wireframeContainer{
+   padding-left: 25%;
+ 
+}
+
+.ipadWireframe{
+    padding-left: 27%;
+
+   
+
+}
+
+.websiteContainer{
+    padding-left: 28%;
+
+}
+
 
 
 #processPhotos{
@@ -146,7 +184,8 @@ border: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #b9f7f8;
+    background-color: #f9d1a0;
+    
 }
 
 .solutionPhotos1{
@@ -242,7 +281,7 @@ border: none;
 }
 
 .responsive{
-    padding-top: 6%;
+    padding-top: 3%;
     text-align:  center;
 }
 
@@ -263,9 +302,6 @@ border: none;
     padding: 10px;
 }
 
-.navBarSolutionInfo{
-    padding-top: 4%;
-}
 
 .solutionImage2{
     display: flex;
@@ -322,4 +358,6 @@ border: none;
 
 .solution2InfoCard{
     font-size: 19px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    padding-top: 2%;
 }
