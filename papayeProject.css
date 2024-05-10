@@ -26,6 +26,7 @@ border: none;
     text-align: center;
     font-family:  'Zen Kaku Gothic New', sans-serif;
     font-weight: bold;
+    width: 700px;
 }
 
 .pageTitle{
@@ -110,9 +111,9 @@ border: none;
  .problemSectionPhotos{
     width: auto;
     height: 400px;
-    padding-left: 20px;
+    padding-left: 3%;
     padding-right: 20px;
-    background-color: rgb(246, 178, 59);
+    background-color: #f9d1a0;
     border-radius: 1.75%;
     align-items: center;
     display: flex;
@@ -155,7 +156,7 @@ border: none;
 }
 
 .wireframeContainer{
-   padding-left: 25%;
+   padding-left: 18%;
  
 }
 
@@ -167,7 +168,8 @@ border: none;
 }
 
 .websiteContainer{
-    padding-left: 28%;
+    padding-left: 25.5%;
+    padding-bottom: 2%;
 
 }
 
@@ -213,6 +215,7 @@ border: none;
 .solutionImage1Info{
     width: 400px;
     margin-bottom: 10%;
+    
 }
 
 
