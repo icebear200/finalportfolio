@@ -254,3 +254,37 @@ border: none;
 .userFlow{
     padding-bottom: 1%;
 }
+
+.goToFigma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7%;
+  
+}
+
+.goToFigmaTitle{
+    text-align: center;
+    padding-top: 5%;
+    font-size: x-large;
+    font-family: "Liquid";
+    color: black
+}
+
+
+  .goToFigma > a {
+    display: inline-block;
+    width: 600px; 
+    height: 400px; 
+}
+
+.goToFigma > a > img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.goToFigma > a:hover img {
+    transform: scale(1.1);
+    border: 3px solid#fe900b;
+}

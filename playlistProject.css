@@ -1,0 +1,409 @@
+.papayePagePadding{
+    padding: 5%;
+}
+
+.navBar{
+    position: absolute;
+    position: absolute;
+    top: 30;
+    right: 0;
+    padding-right: 5%;
+}
+
+.home, .about, .portfolio{
+border: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 174, 255);
+    font-family: "Liquid"; 
+    box-shadow: none;
+    background: none;
+    transition: transform 0.3s;
+}
+
+.pageTitle{
+    font-size: xx-large;
+    font-family: "Bubble Letters";
+    color:rgb(0, 187, 255);
+    text-align: center;
+    padding-top: 2%;
+
+}
+
+.background{
+    font-size: 26px;
+    color: black;
+    padding-left: 7%;
+    padding-right: 10%;
+}
+
+
+
+.problemTitle, .researchTitle, .processTitle, .solutionTitle, .takeawaysTitle, .roleTitle{
+    font-size: x-large;
+    font-family: "Liquid";
+    color: rgb(147, 35, 192);
+    padding-top: 5%;
+}
+
+
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ 
+ .sitesContainer{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 7%;
+    margin-right: 7%;
+ }
+
+ .sitesBackground{
+    height: 500px;
+    padding-top: 4%;
+ }
+
+ .arrow{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-top: 20px solid black; 
+ }
+
+ .filterSketches, .resultDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sketchArrow{
+    height:50%;
+}
+.compareTable{
+    display: flex;
+    justify-content: center;
+}
+
+
+ .midFid, .midFid2, .hiFid, .sketch, .solutionFlow, .processCards{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 4%;;
+    align-items: center;
+    padding-left: 8%;
+ }
+
+ .midFid2StakeFlow{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 4%;;
+    align-items: center;
+    padding-right: 5%;
+ }
+ 
+ .firstIntInfo, .secondItInfo, .thirdIntInfo{
+    width: 900px;
+    font-size: 20px;
+ }
+
+.solutionStakeholder{
+    padding-bottom: 5%;
+}
+
+
+
+ .originalSite:hover, .myRedesign:hover{
+    transform: scale(1.1);
+    border: 1px solid rgb(255, 98, 0);
+ }
+
+
+ .problemSectionInfo, .researchSectionInfo, .roleSection, .takeawaysSection, .finalSolutionInfo, .processSummary, .processSectionInfo{
+    padding-left: 7%;
+    padding-right: 10%;
+    
+ }
+
+ .solutionSectionInfo{
+    padding-left: 7%;
+    padding-right: 10%;
+    background-color: #c081e9;
+ }
+
+
+ .layoutVideoCard, .filterVideoCard, .favoriteVideoCard{
+    width: 800px;
+    padding-left: 20%;
+    padding-bottom: 5%;
+ }
+
+
+ .favoriteAndFilterVid,  .filterAndSortVid, .layoutVid{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .layoutVidExplanation, .filterVidExplanation, .favoriteVidExplanation{
+    width: 800px;
+    text-align: center;
+    padding-left: 18%;
+ }
+ 
+
+ .problemDescription, .mattersDescription, .researchDescription, .processDescription, .solutionDescription, .takeawayDescription, .roleDescription
+ , .finalSolutionInfo, .processSummary{
+    font-size: 22px;
+    color: rgb(28, 28, 28);
+    font-family: "Ringle";
+    line-height: 28px;
+ }
+
+ .problemSectionPhotos{
+    width: auto;
+    height: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(246, 178, 59);
+    border-radius: 1.75%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+
+ .problemImage1, .problemImage2, .problemImage3{
+    padding-right: 5%;
+    width: 300px;
+    height: 250px;
+
+ }
+
+
+ .solutionImage2{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .solutionImagesContainer{
+    background-color: #d1f4fc;
+
+ }
+
+
+#artistFilter{
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 1.75%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+
+.processDiv{
+    /* background-color: rgb(81, 214, 241); */
+    flex-direction: column;
+}
+
+
+
+.displayingResults{
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 1.75%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 7%;;
+  
+}
+
+.processInfo{
+    width: 800px;
+    text-align: center;
+    padding-left: 19%;
+    font-size: 15px;
+}
+
+
+
+
+
+.solutionPhotos1{
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 3%;
+    border-radius: 1.75%;
+    background-color: aqua;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.favoriteVidExplanation, .filterVidExplanation, .layoutVidExplanation{
+    /* width: 800px; */
+    text-align: center;
+
+}
+
+
+
+.solutionImage1{
+    display: flex;
+    flex-direction: column;
+}
+
+.solutionImage1Info{
+    width: 400px;
+    margin-bottom: 10%;
+}
+
+
+.papayeWebsite{
+    display: flex;
+    flex-direction: column;
+}
+
+.spaceArrow{
+    width: 50px;
+}
+
+.solution2OuterContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+}
+
+.filterAndSortVid{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+}
+
+
+
+.solutionImage2InfoCard{
+    width: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+
+}
+
+.navBarSolutionInfo{
+    width: 900px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+
+}
+
+.sitesCardInfo{ 
+    width: 900px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.userFlow{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.responsive{
+    padding-top: 6%;
+    text-align:  center;
+}
+
+
+.redesignContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+    padding-top: 2%;
+
+    padding-right: 1%;
+    padding-bottom: 3%;
+}
+
+.line{
+    border-bottom: 1px solid black;
+    width: 98%;
+    margin-bottom: ;
+    
+}
+
+.navBarSolutionInfo{
+    padding-top: 4%;
+}
+
+.solutionPhotos2{
+    padding-top: 2%;
+}
+
+.userFlow{
+    padding-bottom: 1%;
+}
+
+.goToFigma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7%;
+  
+}
+
+.goToFigmaTitle{
+    text-align: center;
+    padding-top: 5%;
+    font-size: x-large;
+    font-family: "Liquid";
+    color: black
+}
+
+
+
+  .goToFigma > a {
+    display: inline-block;
+    width: 600px; 
+    height: 400px; 
+}
+
+.goToFigma > a > img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.goToFigma > a:hover img {
+    transform: scale(1.1);
+    border: 3px solid#abe1f4;
+}
