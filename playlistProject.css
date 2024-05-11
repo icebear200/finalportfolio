@@ -35,6 +35,8 @@ border: none;
     color: black;
     padding-left: 7%;
     padding-right: 10%;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -42,8 +44,7 @@ border: none;
 .problemTitle, .researchTitle, .processTitle, .solutionTitle, .takeawaysTitle, .roleTitle{
     font-size: x-large;
     font-family: "Liquid";
-    color: blac;
-    padding-top: 5%;
+    color: black;
 }
 
 
@@ -110,11 +111,14 @@ border: none;
     padding-bottom: 4%;;
     align-items: center;
     padding-right: 5%;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
+
  }
  
  .firstIntInfo, .secondItInfo, .thirdIntInfo{
     width: 900px;
     font-size: 20px;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
  }
 
 .solutionStakeholder{
@@ -132,6 +136,7 @@ border: none;
  .problemSectionInfo, .researchSectionInfo, .roleSection, .takeawaysSection, .finalSolutionInfo, .processSummary, .processSectionInfo{
     padding-left: 7%;
     padding-right: 10%;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
     
  }
 
@@ -139,6 +144,7 @@ border: none;
     padding-left: 7%;
     padding-right: 10%;
     background-color: #c081e9;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
  }
 
 
@@ -146,6 +152,8 @@ border: none;
     width: 800px;
     padding-left: 20%;
     padding-bottom: 5%;
+    font-size: 18px;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
  }
 
 
@@ -159,6 +167,8 @@ border: none;
     width: 800px;
     text-align: center;
     padding-left: 18%;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
+    font-size: 18px;
  }
  
 
@@ -166,7 +176,7 @@ border: none;
  , .finalSolutionInfo, .processSummary{
     font-size: 22px;
     color: rgb(28, 28, 28);
-    font-family: "Ringle";
+    font-family:  'Zen Kaku Gothic New', sans-serif;
     line-height: 28px;
  }
 
@@ -181,6 +191,7 @@ border: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
  }
 
 
@@ -200,6 +211,7 @@ border: none;
 
  .solutionImagesContainer{
     background-color: #d1f4fc;
+    
 
  }
 
@@ -216,13 +228,12 @@ border: none;
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 5%;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
 }
 
 .processDiv{
-    /* background-color: rgb(81, 214, 241); */
     flex-direction: column;
 }
-
 
 
 .displayingResults{
@@ -243,11 +254,9 @@ border: none;
 .processInfo{
     width: 800px;
     text-align: center;
-    padding-left: 19%;
-    font-size: 15px;
+    padding-left: 15%;
+    font-size: 18px;
 }
-
-
 
 
 
@@ -268,8 +277,8 @@ border: none;
 }
 
 .favoriteVidExplanation, .filterVidExplanation, .layoutVidExplanation{
-    /* width: 800px; */
     text-align: center;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
 
 }
 
@@ -283,6 +292,8 @@ border: none;
 .solutionImage1Info{
     width: 400px;
     margin-bottom: 10%;
+    font-size: 18px;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
 }
 
 
@@ -314,6 +325,8 @@ border: none;
     padding-left: 2%;
     padding-right: 2%;
     align-items: center;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
+    font-size: 18px;
 
 }
 
@@ -322,6 +335,8 @@ border: none;
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
+    font-size: 18px;
 
 }
 
@@ -331,6 +346,8 @@ border: none;
     padding-right: 2%;
     text-align: center;
     padding-bottom: 2%;
+    font-family:  'Zen Kaku Gothic New', sans-serif;
+    font-size: 18px;
 }
 
 .userFlow{

@@ -44,6 +44,7 @@ border: none;
     padding-left: 7%;
     padding-right: 10%;
     font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -113,7 +114,8 @@ border: none;
     height: 400px;
     padding-left: 3%;
     padding-right: 20px;
-    background-color: #f9d1a0;
+    /* background-color: #f9d1a0; */
+    background-color: #abe1f4;
     border-radius: 1.75%;
     align-items: center;
     display: flex;
@@ -186,7 +188,8 @@ border: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #f9d1a0;
+    /* background-color: #f9d1a0; */
+    background-color: #abe1f4;
     
 }
 
@@ -356,7 +359,8 @@ border: none;
 
 .goToFigma > a:hover img {
     transform: scale(1.1);
-    border: 3px solid#fe900b;
+    /* border: 3px solid#fe900b; */
+    border: 3px solid rgb(105, 205, 241);
 }
 
 .solution2InfoCard{
