@@ -148,7 +148,7 @@ border: none;
  }
 
 
- .layoutVideoCard, .filterVideoCard, .favoriteVideoCard{
+ .layoutVideoCard, .filterVideoCard, .favoriteVideoCard, .songComponentCard{
     width: 800px;
     padding-left: 20%;
     padding-bottom: 5%;
@@ -157,18 +157,22 @@ border: none;
  }
 
 
- .favoriteAndFilterVid,  .filterAndSortVid, .layoutVid{
+ .favoriteAndFilterVid,  .filterAndSortVid, .layoutVid, .songComponenet{
     display: flex;
     flex-direction: column;
     height: auto;
  }
 
- .layoutVidExplanation, .filterVidExplanation, .favoriteVidExplanation{
+ .songComponentExplanation{
+    padding-top: 3%;
+ }
+
+ .layoutVidExplanation, .filterVidExplanation, .favoriteVidExplanation, .songComponentExplanation{
     width: 800px;
     text-align: center;
     padding-left: 18%;
     font-family:  'Zen Kaku Gothic New', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
  }
  
 
@@ -256,6 +260,7 @@ border: none;
     text-align: center;
     padding-left: 15%;
     font-size: 18px;
+    padding-top: 2%;
 }
 
 
@@ -276,7 +281,7 @@ border: none;
 
 }
 
-.favoriteVidExplanation, .filterVidExplanation, .layoutVidExplanation{
+.favoriteVidExplanation, .filterVidExplanation, .layoutVidExplanation, .songComponentExplanation{
     text-align: center;
     font-family:  'Zen Kaku Gothic New', sans-serif;
 
@@ -375,7 +380,7 @@ border: none;
 
 .line{
     border-bottom: 1px solid black;
-    width: 98%;
+    width: 99%;
     margin-bottom: 5%;
     
 }

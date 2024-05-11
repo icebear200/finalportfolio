@@ -24,9 +24,9 @@
     
     <div class="navBar">
         <div class="buttons">   
-        <button class="home" onClick="goToHome()"> HOME </button>
-        <button class="about" onClick="goToAbout()"> ABOUT </button>
-        <button class="portfolio" onClick="goToPortfolio()"> PORTFOLIO </button>
+        <button class="home" onClick="goToHome()" aria-label="Home"> HOME </button>
+        <button class="about" onClick="goToAbout()" aria-label="About"> ABOUT </button>
+        <button class="portfolio" onClick="goToPortfolio()" aria-label="Portfolio"> PORTFOLIO </button>
       </div>
       </div>
       <script> 
@@ -48,9 +48,10 @@
     <div class="background">
         <h3> Sort, Filter, and Aggregator Functionality in React App</h3>
         <p> 
-         I was tasked with creating a React App that filters, sort, and aggregates data. I decided to create a playlsit organization app that allows
-         users to sort songs in a library or playlist by genre and artist, and filter alphabetically my song title. Users could also add and remove songs in the library 
-         to their "Favorite Song" list which tells them how many minutes they've spent listening to their favorite songs. 
+          I took on the challenge of building a React app that could filter, sort, and aggregate data. 
+         I decided to build a playlist organization app because I love music. This app allows users to organize their songs within 
+          a library or playlist by genre and artist, and sort them alphabetically by song title. Additionally, 
+          users can add and remove songs from their library to a "Favorite Songs" list, which also tracks the total time spent listening to their favorite songs.
         </p>
     </div>
   
@@ -59,10 +60,9 @@
        <div class="problemTitle">    <h2> THE PROBLEM</h2>  </div>
        <div class="problemDescription">   
        <p> 
-       I have playlists that are so long and disorganized-- essentially song libraries with songs from all genres I've liked at some point over the past couple of years.
-       Creating new playlists are a challenge for me because I'm not quite sure how to categorize my diverse music taste and enjoy the surprise of wildly different songs playing back to back.
-       But sometimes it becomes difficult to find a song of a particular genre or artist I want to listen to in my long playlist. Aditionally, my favorite songs 
-       change often and I want to have some component that shows me my up to date favorite songs. 
+        I have long, disorganized playlists that essentially function as song libraries, containing songs from various genres that I've liked over the past couple of years.
+        Creating new playlists is challenging for me because I'm unsure how to categorize my diverse music taste and enjoy the surprise of different songs playing back-to-back.
+        However, it's difficult to find specific songs by genre or artist in my long playlist. Additionally, my favorite songs change often, so I wanted a way to keep track of that. 
         </p>
         </div>
       </div>
@@ -70,22 +70,26 @@
       <div class="researchSectionInfo"> 
 
   <div class="mattersDescription"> <h4> Why it Matters:</h4> 
-     <p> Creating an organization feature for exisiting playlists helps music lovers efficiently rediscover the love for music they already know and love 
-        while appreciating the diversity of their taste. </p> </div>
+     <p> 
+      Creating an organization feature for existing playlists helps music lovers efficiently rediscover the music they already know and love, all while appreciating the diversity of their taste </p> </div>
 
   <div class="researchTitle">  <h2> RESEARCH </h2></div>
     <div class="researchDescription">  
     <h2> Research that Influenced my Work:</h2> 
-    <p> I did a comparative analysis of sites with sort, filter, and aggregator functionalities to see what works well and what does not. This 
-        analysis helped me identify features I wanted to impelement.
-        
+    <p> For my research, I conducted a comparative analysis of websites with sort, filter, 
+      and aggregator functionalities. I specifically looked at sites like Revolve, Expedia, and Shein,
+      which are well-known for their effective data displays and have different ways of sorting, filtering, 
+      and aggregating data. I chose these sites over music platforms because their data displays were more aligned with how 
+      I wanted to design my music library, which is currently disorganized. This analysis helped me identify features I wanted to 
+      implement in my project. This data allowed me to gather inspiration for how different information is filtered, sorted, and 
+      aggregated and how the results of these functions are displayed. 
     </p>
 
     <div class="compareTable"> 
-        <img src="images/compTable.png" width="600px" height="300px"> 
+        <img src="images/compTable.png" width="600px" height="300px" alt="comparison table"> 
     </div>
 
-    <p>This app is for music lovers everywhere with diverse tastes.
+    <p>This app is for music lovers everywhere with diverse tastes across wide ranges of genres and artists. 
   </div>
 
   <div class="processTitle"> <h2>PROCESS </h2>  
@@ -95,36 +99,47 @@
    
 <div class="Process"> 
     <div class="processSectionInfo"> 
-        <div class="processSummary"> <p> I created sketches of how I wanted song components to render on the page as users used different functionality. While coding, I had to adapt my design to improve layout and userflow as well as to meet 
-           deadlines. Below
+        <div class="processSummary"> <p> During the development process, I started by sketching 
+          out various ideas for how I wanted the song components to appear on the page and considering how
+           users would interact with different functionalities. As I progressed with coding, I found myself making 
+           adjustments to the design for better user flow. I also had to change some of my initial ideas to make sure 
+           I could meet the deadline. Check out how my design for each component changed over time.
         </p></div>  
 
 
-            
             <div class ="processDiv">  
-                <div class="processInfo"> <p>   In my initial sketch, I wanted to utilize a Picker for the filtering categories but during the coding process, I was having trouble 
-                    making the picker work accurately and the deadline was quickly approaching. I had to adapt my design and decied to use checkboxes where users could check the artist or genre they wished to filter by. Once users select an aritst or genre, the library of songs is replaced
-                    with the results
+                <div class="processInfo"> <p>  In my initial sketch, I envisioned using a Picker for 
+                  filtering categories. However, when I tried to code this, I had trouble getting the 
+                  Picker to work correctly, and with the deadline approaching, I needed to find a solution quickly.
+                   I decided to adapt my design and utilize checkboxes instead. This way, users could check the artist 
+                   or genre they wished to filter by. Checkboxes were an effective alternative but do make the design a bit 
+                   messier than I envisioned. Once a user selects an artist or genre, the library of songs is replaced with the
+                    filtered results.
               </p></div>
             <div id="artistFilter">  
                 <div class="pickerSketch">    
-                <img src="images/sketchPicker.jpg" width="580px" height="350px">
+                <img src="images/sketchPicker.jpg" width="580px" height="350px" alt="picker sketch">
                  </div>
                 
                  <div class="spaceArrow"> 
-                    <img src="images/rightArrow.png" width="50px" height="50px"> 
+                    <img src="images/rightArrow.png" width="50px" height="50px"  alt="right arrow"> 
                      </div>
                  <div class="checkboxArtist">  
-                   <img src="images/checkboxArtist.png" width ="450px" height="350px"> 
+                   <img src="images/checkboxArtist.png" width ="450px" height="350px"  alt="checkboxes"> 
              </div>
               </div>
               <div class="line">  </div> 
-              <div class="processInfo"> <p>  My deisgn for favoriting songs also changed when I began coding. I intitally planned to have the favorited songs render as the only components on the page, but realized that didn't make as much sense. It made better sense to have the favorite songs render as a list on the right side of the page so that users could continue to filter and sort their library after favoriting songs. I also added a remove from favorites button to allow users to edit their favorite song list.
+              <div class="processInfo"> <p> My design for favoriting songs also changed when I began coding. 
+                Initially, I planned to display favorited songs as the only components on the page, but I soon 
+                realized this approach didn't make much sense because then users could not continue to sort and filter
+                 songs once they favorited a song. I decided it would be more practical to render the favorite songs as a 
+                 list on the right side of the page. This way, users could still interact with the rest of their library as they added songs 
+                 to their favorites. Additionally, I added a "remove from favorites" button to allow users to easily update and remove songs from their favorite list.
           </p></div>
               <div class="displayingResults">
-                 <div class="ogFilter">     <img src="images/favSketch.jpg" width="580px" height="350px">   </div>
-                 <div class="spaceArrow">   <img src="images/rightArrow.png" width="50px" height="50px">  </div>
-                 <div class="designFilter"> <img src="images/favList.png" width="450px" height="350px"> </div>
+                 <div class="ogFilter">     <img src="images/favSketch.jpg" width="580px" height="350px"  alt="original filter">   </div>
+                 <div class="spaceArrow">   <img src="images/rightArrow.png" width="50px" height="50px"  alt="arrow">  </div>
+                 <div class="designFilter"> <img src="images/favList.png" width="450px" height="350px"  alt="checkboxes"> </div>
               </div>
 
 
@@ -136,27 +151,43 @@
                     <h3>SOLUTION</h3>
                 </div>
                 <div class="solutionDescription">
-                    <p>Created an app that allows users to filter songs in their messy libraries by artist and genre as well as sort alphabetically.</p>
+                    <p> I created a React app that allows users to organize songs in their messy libraries by filtering songs based on artist and genre as well as sorting alphabetically.</p>
                 </div>
                
-                <div class = "solutionImagesContainer">   
+                <div class = "solutionImagesContainer"> 
+                  <div class="songComponent">
+                    <div class="songComponentExplanation">
+                      <h3> Song Component: Each song in the library is a React Song component that includes the song's title, artist, year, genre, and length. </h3> </p> 
+                  </div>
+                      <div class="songComponentCard">
+                          <img src="images/songComponent.png" width="600px" height="350px"  alt="song component"> 
+                      </div>
+                      <div class="solution2InfoCard"></div>
+                      <div class="line"></div>
+                  </div>
+                  
+
+
                 <div class="layoutVid">
                   <div class="layoutVidExplanation">
-                    <h4> App Layout: Designed a song library, representing a disorganized playlist </p> 
+                    <h3> App Layout: Designed a song library interface, representing a disorganized playlist </h3> </p> 
                 </div>
                     <div class="layoutVideoCard">
-                        <video width="700px" height="400px" controls>
+                        <video width="700px" height="400px" controls  aria-label="view layout">
                             <source src="images/songLib.mp4" type="video/mp4">
                     </div>
                     <div class="solution2InfoCard"></div>
                     <div class="line"></div>
                 </div>
+
+
+
                 <div class="filterAndSortVid">
                     <div class="filterVidExplanation">
-                        <h4>Filter and Sort Features: Check boxes to filter songs by artist or genre and can sort those results alphabetically.</h4>
+                        <h3>Filter and Sort Features: Checkboxes to filter songs by artist or genre. Results can be sorted alphabetically.</h3>
                     </div>
                     <div class="filterVideoCard">
-                        <video width="700px" height="400px" controls>
+                        <video width="700px" height="400px" controls aria-label="view filtering"> 
                             <source src="images/filterAndSortVid.mp4" type="video/mp4">
                      
                     </div>
@@ -166,10 +197,10 @@
 
                 <div class="favoriteAndFilterVid">
                     <div class="favoriteVidExplanation">
-                        <h4>Favorite Feature: Users can add and remove songs to "favorite songs" list.</h4>
+                        <h3>Favoriting Feature: Users can add and remove songs to "Favorite Songs" list.</h3>
                     </div>
                     <div class="favoriteVideoCard">
-                        <video width="700px" height="400px" controls>
+                        <video width="700px" height="400px" controls aria-label="view favorites">
                             <source src="images/favoriteVid.mp4" type="video/mp4">
             
                     </div>
@@ -192,7 +223,7 @@
 <div class="goToFigmaTitle"> <h3>  TRY THE PLAYLIST ORGANIZER </h3> </div>
 <div class="goToFigma"> 
     <a href="https://final-app-playlist.vercel.app/">  
-        <img src= "images/playlistCover.png" width="600px" height="400px"> </a>
+        <img src= "images/playlistCover.png" width="600px" height="400px" alt="website"> </a>
         </div>
 
 
@@ -202,26 +233,23 @@
 <div class="takeawaysSection"> 
   <div class="takeawaysTitle"> <h3> TAKEAWAYS</h3></div>
  <div class="takeawayDescription"> <p> 
-    This project me the significance of a thoguhtful planning/sketching process before beginnig to code. Looking back, I should've created multiple
-    design layouts and drawn from the best features in those designs to create a final sketch my design would be based on. I had to be very adaptable during this project
-    becaue ideas I initally had did not always make the best sense for a playlist. 
+  This project taught me the importance of thoughtful planning and sketching before diving into coding. 
+  In hindsight, I realize I should have created multiple design layouts and selected the best features
+   from each to create a final sketch as the basis for my design. I learned to be adaptable because some of 
+   my initial ideas didn't always make the most sense for a playlist.
   </p> 
 
-   <p> If I were to redo this project, I'd implement pickers rather than checkboxes for the filtering options to create a cleaner design. I'd also think about creating a 
-    vertical layout to make the library resemble a more traditional playlist and to create a cleaner design because feedback from users have suggested that the layout is congested. </p>
+   <p> If I were to redo this project, I would opt for pickers instead of checkboxes for the 
+    filtering options to achieve a cleaner design. Additionally, I would consider implementing a vertical
+     layout to make the library resemble a more traditional playlist. Feedback from users has indicated that the 
+     current layout feels congested, so this change could improve the overall design and user experience. </p>
 </div>
 </div>
 
 <div class="roleSection"> 
   <div class="roleTitle"> <h3> MY ROLE</h3></div>
- <div class="roleDescription">    <p> I worked alone on this project and was the designer and coder. </p> </div>
+ <div class="roleDescription">    <p> I was the designer and developer of this project. </p> </div>
 </div>
-
-
- 
-
-   
-
 
     </div>
   </body>
