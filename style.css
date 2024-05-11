@@ -4,6 +4,7 @@
     font-weight: bolder;
     /* color:rgb(255, 102, 0);; */
     color: rgb(0, 149, 255);
+    color: white;
     font-family: "Bubble Letters"; 
     box-shadow: none;
     background: none;
@@ -24,7 +25,8 @@
 
 #homepageTitle{
     font-family: "Bubble Letters";
-    color: rgb(255, 102, 0);;
+    /* color: rgb(255, 102, 0);; */
+    color: white;
 
 }
 
@@ -67,8 +69,8 @@
 #intro{
     font-size: 30px;
     font-weight: bolder;
-    color: black;
-    font-family: "Bubble Letters";
+    color: white;
+    font-family: "Bubble Letters"; 
     padding-top: 10%;
     padding-left: 20%;
     padding-right: 10%;
