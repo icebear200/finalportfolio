@@ -42,7 +42,7 @@ border: none;
 .problemTitle, .researchTitle, .processTitle, .solutionTitle, .takeawaysTitle, .roleTitle{
     font-size: x-large;
     font-family: "Liquid";
-    color: rgb(147, 35, 192);
+    color: blac;
     padding-top: 5%;
 }
 
