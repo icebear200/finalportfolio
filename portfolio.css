@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 1%;
+    padding-right: 2%;
     position: relative;
     
 }
@@ -15,7 +16,7 @@
     padding: 1em;
 }
 
-.home, .about, .contact{
+.home, .about{
     border: none;
     font-size: 25px;
     font-weight: bold;
@@ -24,6 +25,7 @@
     box-shadow: none;
     background: none;
     transition: transform 0.3s;
+    border: 1px solid black;
 }
 
 .pageTitle{
@@ -76,7 +78,8 @@
 
   .papayeInfoCard, .playlistInfoCard, .cur8InfoCard, .overviewInfoCard{
     padding-left: 5%;
-    padding-right: 2%
+    padding-right: 2%;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
   }
 
   
