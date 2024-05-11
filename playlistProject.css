@@ -11,7 +11,7 @@
 }
 
 .home, .about, .portfolio{
-border: none;
+    border: 1px solid black;
     font-size: 25px;
     font-weight: bold;
     color: rgb(0, 174, 255);
@@ -24,7 +24,7 @@ border: none;
 .pageTitle{
     font-size: xx-large;
     font-family: "Bubble Letters";
-    color:rgb(0, 187, 255);
+    color: rgb(0, 149, 255);
     text-align: center;
     padding-top: 2%;
 
